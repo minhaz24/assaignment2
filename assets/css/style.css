@@ -20,6 +20,7 @@ body{
 }
 
 #navigation-menu a{
+    color: black;
     text-decoration: none;
 }
 #navigation-menu ul{
@@ -37,6 +38,9 @@ body{
 #navigation-menu .active{
 	font-weight: 700;
 	color:#000;
+}
+#navigation-menu li :hover{
+    color: blue;
 }
 
 #name{
@@ -133,6 +137,27 @@ body{
     width: 100%;
 }
 
+.starred {
+    color: orange;
+  }
+.rating{
+    display: flex;
+}
+#rating-number{
+    padding-left: 20px;
+}
+#all-star{
+    margin-top: 20px;
+}
+.more-button{
+
+    color: #E02C6D;
+    float: right;
+    margin-right: 140px;        
+}
+.more-button i{
+    margin-left: 10px;
+}
 
 /***************************\
      Photo Content Style  
@@ -247,7 +272,19 @@ width: 100%;
     padding-top: 20px;
 }
 
-
+.card {
+    max-width: 300px;
+    margin: auto;
+    text-align: left;
+    padding-left: 5px;
+    font-size: 22px;
+  }
+  
+  .details {
+    color: grey;
+    font-size: 14px;
+  }
+  
 
 
 
@@ -322,24 +359,24 @@ width: 100%;
     }
 
 /********************************\
-     R-Highlights Content Style  
+     R-featured Content Style  
 \********************************/
 
-    .highlights-container {
+    .featured-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 90%;
     }
-    .highlights-text h1{
+    .featured-text h1{
     font-size: 30px;
     line-height: 40px;
     }
-    .highlights-text p{
+    .featured-text p{
         font-size: 16px;
         line-height: 28px;
         margin-bottom: 20px;
     }
-    .highlights-img img {
+    .featured-img img {
         margin-top: 20px;
     }
     
@@ -429,29 +466,17 @@ width: 100%;
     margin-left: 34px;
     
 }
-    .highlights-container {
+    .featured-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 90%;
     
 }
-    .highlights-img img{
+    .featured-img img{
         margin-top: 30px;
     
     }
 }
 
 
-.card {
-    max-width: 300px;
-    margin: auto;
-    text-align: left;
-    padding-left: 5px;
-    font-size: 22px;
-  }
-  
-  .details {
-    color: grey;
-    font-size: 14px;
-  }
-  
+
